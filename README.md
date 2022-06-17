@@ -1,3 +1,5 @@
-# Discord Clone
+# Html CSS and JavaScript Projects
 
-Discord Clone made using HTML, CSS 
+- [ ] Tic Tac Toe
+- [ ] Snake Game
+- [ ] Ecommerce Website
