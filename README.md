@@ -1,2 +1,3 @@
-# HTMLCSS
-This contains all HTML,CSS Websites which I made while learning
+# Discord Clone
+
+Discord Clone made using HTML, CSS 
