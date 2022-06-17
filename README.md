@@ -2,6 +2,6 @@
 
 - [x] Tic Tac Toe
 - [ ] Music Player
-- [ ] Clock
+- [x] Clock
 - [ ] Snake Game
 - [ ] Ecommerce Website
