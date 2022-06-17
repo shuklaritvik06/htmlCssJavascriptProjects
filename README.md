@@ -1,6 +1,7 @@
 # Html CSS and JavaScript Projects
 
-- [ ] Tic Tac Toe
+- [x] Tic Tac Toe
 - [ ] Music Player
+- [ ] Clock
 - [ ] Snake Game
 - [ ] Ecommerce Website
