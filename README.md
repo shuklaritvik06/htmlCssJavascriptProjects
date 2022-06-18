@@ -4,4 +4,5 @@
 - [x] Music Player
 - [x] Clock
 - [x] Snake Game
+- [x] Calculator
 - [ ] Ecommerce Website
