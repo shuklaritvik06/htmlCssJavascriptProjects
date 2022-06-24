@@ -3,6 +3,7 @@
 - [x] Tic Tac Toe
 - [x] Music Player
 - [x] Clock
-- [x] Snake Game
 - [x] Calculator
+- [ ] Gmail Clone
+- [ ] LinkedIn Clone
 - [ ] Ecommerce Website
