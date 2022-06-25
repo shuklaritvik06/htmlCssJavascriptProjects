@@ -4,6 +4,6 @@
 - [x] Music Player
 - [x] Clock
 - [x] Calculator
-- [ ] Gmail Clone
-- [ ] LinkedIn Clone
-- [ ] Ecommerce Website
+- [x] Gmail Clone
+- [x] Google Clone
+- [ ] Responsive Website
