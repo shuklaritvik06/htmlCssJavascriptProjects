@@ -1,1 +1,1 @@
-gmailclone.surge.sh
+https://gmailclone.surge.sh
