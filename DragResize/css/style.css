@@ -1,0 +1,7 @@
+.box{
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+    cursor: grabbing ;
+}
