@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sky{
+    width: 100vw;
+    height: 40vh;
+    background: rgb(0, 208, 255);
+}
+
+.cloud:nth-child(1){
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 300px;
+    animation: wind 8s linear infinite reverse both;
+}
+
+.cloud:nth-child(2){
+    opacity: 0.8;
+    top: 100px;
+    left: 100px;
+    animation: wind 10s linear infinite reverse both;
+}
+
+.grass{
+    width: 100%;
+    height: 20vh;
+    background: rgb(5, 81, 5);
+    position: relative;
+    overflow: hidden;
+}
+
+.road{
+    width: 100%;
+    height: 40vh;
+    background: rgb(112, 111, 111);
+    border-top: 9px solid rgb(87, 87, 87);
+    border-bottom: 9px solid rgb(87, 87, 87);
+    position: relative;
+    overflow: hidden;
+}
+
+.lines{
+    width: 100%;
+    height: 5px;
+    border: dashed 5px rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+}
+
+.luigi{
+    animation: drive 5s linear infinite reverse both;
+}
+
+.mario{
+    animation: drive 5s infinite linear both;
+}
+
+@keyframes drive {
+    0% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes wind {
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(100vw);
+    }
+}

@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #f6d365, #fda085);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#clockBody{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#time{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.clock {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: rgb(20, 4, 52);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.number {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.One {
+  transform: rotate(30deg);
+}
+
+.Two {
+  transform: rotate(60deg);
+}
+
+.Three {
+  transform: rotate(90deg);
+}
+
+.Four {
+  transform: rotate(120deg);
+}
+
+.Five {
+  transform: rotate(150deg);
+}
+
+.Sixth {
+  transform: rotate(180deg);
+}
+
+.Seventh {
+  transform: rotate(210deg);
+}
+
+.Eighth {
+  transform: rotate(240deg);
+}
+
+.Ninth {
+  transform: rotate(270deg);
+}
+
+.Tenth {
+  transform: rotate(300deg);
+}
+
+.Eleventh {
+  transform: rotate(330deg);
+}
+.clock::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.hand{
+    transform-origin: bottom;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#minuteHand {
+  width: 7px;
+  height: 140px;
+  background-color: rgb(255, 255, 255);
+}
+
+#secondHand {
+  width: 3px;
+  height: 50%;
+  background-color: rgb(255, 255, 0);
+}
+
+#hourHand {
+  width: 7px;
+  height: 100px;
+  background-color: rgb(125, 4, 117);
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 505px) {
+    .clock {
+        width: 300px;
+        height: 300px;
+    }
+    .number {
+        font-size: 2rem;
+    }
+    .hand {
+        width: 5px;
+        height: 150px;
+    }
+    #minuteHand {
+        width: 5px;
+        height: 100px;
+    }
+    #secondHand {
+        width: 1px;
+        height: 50%;
+    }
+    #hourHand {
+        width: 5px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .clock {
+        width: 200px;
+        height: 200px;
+    }
+    .number {
+        font-size: 1rem;
+    }
+    .hand {
+        width: 3px;
+        height: 130px;
+    }
+    #minuteHand {
+        width: 3px;
+        height: 90px;
+    }
+    #secondHand {
+        width: 1px;
+        height: 50%;
+    }
+    #hourHand {
+        width: 3px;
+        height: 90px;
+    }
+}

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-left span {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.header-middle {
+  display: flex;
+  flex: 0.7;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header-middle input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: medium;
+  background-color: transparent;
+}
+.material-icons {
+  color: gray;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-right span {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.sidebar {
+  flex: 0.3;
+  max-width: 300px;
+  padding-right: 20px;
+}
+
+.compose {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: gray;
+  background-color: white;
+  padding: 15px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.compose span {
+  margin-right: 5px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #818181;
+}
+
+.option span {
+  margin: 0 5px;
+  padding: 5px;
+}
+.active {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.option:hover,
+.active {
+  background-color: #fcecec;
+  color: #c04b37;
+  font-weight: bold;
+}
+
+.side_footer{
+    display: flex;
+    justify-content: center;
+}
+
+.side_foot_icons span{
+    margin: 7px;
+    cursor: pointer;
+}
+
+.emailList{
+  flex: 1;
+  overflow-y: scroll;  
+}
+
+.settings{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 400;
+    padding: 10px;
+}
+
+.settings-left{
+    display: flex;
+    align-items: center;
+}
+
+.settings-left span{
+    margin-right: 10px;
+}
+
+.emails_category{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    align-items: center;
+    cursor: pointer;
+    color: gray;
+    z-index: 999;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    min-width: 200px;
+}
+.selected{
+    background-color: whitesmoke;
+    border-width: 3px;
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.selected .material-icons{
+    color: red;
+}
+
+.emails{
+    overflow: scroll;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    cursor: pointer;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.first{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.email span,input{
+    margin: 5px;
+}
+
+
+.time{
+    padding-right: 15px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.desc{
+    font-size: 13px;
+    font-weight: 400px;
+    color: gray;
+}
+
+.email:hover{
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+}

@@ -1,0 +1,182 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Finger Paint', cursive;
+}
+
+/* Navbar */
+
+#nav{
+    background-color: rgb(16, 5, 44);
+    display: flex;
+    color: white;
+    height: 65px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#navBtn{
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(16, 5, 44);
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 0 10px;
+    margin: 0 50px;
+    border-radius: 5px;
+}
+i{
+    font-size: 50px;
+    cursor: pointer;
+}
+#right{
+    display: flex;
+    align-items: center;
+}
+
+
+/* playArea */
+
+#gameGroup{ 
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#playArea{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.box:hover{
+    background-color: rgb(234, 232, 251);
+}
+
+/* playInfo */
+
+.info {
+    font-size: 22px;
+}
+
+#playInfo{
+    margin-top: 10px;
+}
+
+
+#playInfo h1{
+    font-size: 2.5rem;
+}
+
+#reset {
+    margin: 23px;
+    padding: 10px 18px;
+    background: #ecb7e9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#line{
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 950px)
+{
+    #playInfo{
+        margin-top: 40px;
+    }
+    #playInfo h1{
+        font-size: 2rem;
+    }
+    #playArea { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
+
+@media screen and (max-width: 630px)
+{
+    #gameGroup{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 760px)
+{
+    #navBtn{
+        display: none;
+    }
+    #nav{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 490px)
+{
+    nav ul li a{
+        font-size: 20px;
+    }
+    i{
+        font-size: 30px;
+    }
+}

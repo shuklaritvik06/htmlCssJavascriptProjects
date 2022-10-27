@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #1CB5E0 0%, #000851 100%);
+    font-family: 'Raleway', sans-serif;
+}
+#calc {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px,auto) repeat(5, 100px);
+}
+
+#calc > button {
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid white;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: flex-end;
+  background-color: rgba(27, 3, 54, 0.744);
+
+  word-break: break-all;
+}
+
+.prev{
+  color: rgba(255, 255, 255, 0.615);
+}
+
+.curr{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}

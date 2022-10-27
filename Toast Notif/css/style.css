@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.toast{
+    position:fixed;
+    padding: 1rem;
+    width: 300px;
+    border: 1px solid #333;
+    border-radius: .25rem;
+}
+
+.toast::after{
+    content: "\00D7";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .20rem;
+}
+
+.toast[data-position="top-right"]{
+    top: 1rem;
+    right: 1rem;
+}
+
+.toast[data-position="top-left"]{
+    top: 1rem;
+    left: 1rem;
+}
+
+.toast[data-position="bottom-left"]{
+    bottom: 1rem;
+    left: 1rem; 
+}
+
+.toast[data-position="bottom-right"]{
+    bottom: 1rem;
+    right: 1rem; 
+}

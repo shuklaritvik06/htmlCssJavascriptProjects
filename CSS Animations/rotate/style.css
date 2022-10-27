@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(42, 41, 41);
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(17, 255, 215);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.panels{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    list-style: none;
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.front, .back{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+
+.panels div.back{
+    transform: rotateY(90deg);
+}
+
+.panels div.front{
+    position: absolute;
+}
+
+.panels div:hover div.front{
+    cursor: pointer;
+    animation: rotate 0.4s forwards ease;
+}
+
+.panels div:hover div.back{
+    cursor: pointer;
+    animation: rotate  0.4s 0.4s reverse ease-out forwards;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(90deg);
+    }
+}

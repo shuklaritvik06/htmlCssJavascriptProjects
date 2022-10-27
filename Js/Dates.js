@@ -1,0 +1,17 @@
+const date = new Date();
+const year = date.getFullYear();
+const month = date.getMonth();
+const day = date.getDate();
+const hour = date.getHours();
+const minute = date.getMinutes();
+const second = date.getSeconds();
+const millisecond = date.getMilliseconds();
+const dayOfWeek = date.getDay();
+date.setYear(2018);
+date.setMonth(1);
+date.setDate(1);
+date.setHours(0);
+date.setMinutes(0);
+date.setSeconds(0);
+date.setMilliseconds(0);
+console.log(date.toString());

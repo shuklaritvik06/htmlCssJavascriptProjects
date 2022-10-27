@@ -1,0 +1,260 @@
+/* Selectors in CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Document root element */
+
+:root {
+}
+
+.class-selector {
+  color: green;
+}
+
+.classOne.classTwo {
+  color: red;
+}
+
+.classOne .nested-class {
+  color: yellow;
+}
+
+#id-selector {
+  color: pink;
+}
+
+/* All paragraph elements inside div parent */
+
+div > p {
+  color: green;
+}
+
+/* Select everything inside the all class parent element */
+
+div.all > * {
+  color: purple;
+}
+
+.first + h1 {
+  background-color: pink;
+}
+
+p ~ ul {
+  background-color: yellow;
+}
+
+a[target] {
+  background-color: pink;
+}
+
+/* Attribute value begins with */
+
+a[href^="http://"]
+{
+  background-color: green;
+}
+
+/* Attribute value ends with */
+
+a[href$=".com"] {
+  background-color: red;
+}
+
+/* Attribute contain a substring google in the value */
+
+a[href*="google"] {
+  background-color: yellow;
+}
+
+a:active {
+  background-color: pink;
+}
+
+input[type="checkbox"]:checked {
+  height: 50px;
+  width: 50px;
+}
+
+/* Default input element */
+
+input:default {
+  border: 1px solid black;
+}
+
+/* Disabled element */
+
+input:disabled {
+  border: 1px solid red;
+}
+
+/* Empty element */
+
+input:empty {
+  border: 1px solid green;
+}
+
+/* Enabled element */
+
+input:enabled {
+  border: 1px solid pink;
+}
+
+/* Visited Link */
+
+a:visited {
+  color: blue;
+}
+
+/* Hover element */
+
+a:hover {
+  color: red;
+}
+
+/* Valid element */
+
+input:valid {
+  border: 1px solid yellow;
+}
+
+/* Target element */
+
+input:target {
+  border: 1px solid pink;
+}
+
+/* Required element style */
+
+input:required {
+  border: 1px solid green;
+}
+
+/* Readonly not specified */
+
+input:read-write {
+  border: 1px solid red;
+}
+
+/* Readonly */
+
+input:read-only {
+  border: 1px solid green;
+}
+
+/* Out of range style */
+
+input:out-of-range {
+  border: 2px solid red;
+}
+
+/* Optional Element */
+
+input:optional{
+    border: 1px solid green;
+}
+
+/* Only child of its parent */
+
+p:only-child {
+  color: green;
+}
+
+/* Only one in the parent */
+
+p:only-of-type {
+  color: red;
+}
+
+/* Style in fullscreen mode */
+
+:fullscreen{
+    background-color: red;
+}
+
+/* In range style */
+
+input:in-range {
+  border: 1px solid green;
+}
+
+/* Not style */
+
+:not(p) {
+  color: red;
+}
+
+/* First of type */
+
+div:first-of-type{
+  background-color: green;
+}
+
+/* Nth of type */
+
+p:nth-of-type(2) {
+  color: green;
+}
+
+/* Nth last type */
+
+p:nth-last-of-type(2){
+    color: green;
+}
+
+/* Nth last child */
+
+p:nth-last-child(2){
+    color: green;
+}
+
+/* Nth child of its parent */
+
+div:nth-child(2){
+  border: 1px solid green;
+}
+
+/* All unvisited links */
+
+a:link{
+  color: gray;
+}
+
+/* Invalid input styling */
+
+input:invalid{
+  background-color: yellow;
+}
+
+/* After */
+
+p::after{
+  content: "This is after";
+}
+
+/* Before */
+
+p::before{
+  content: "This is before";
+}
+
+/* First Letter  */
+
+p::first-letter{
+  color: red;
+}
+
+/* First Line  */
+
+p::first-line{
+  color: red;
+}
+
+/* Marker of the list */
+
+::marker{
+  color: red;
+}

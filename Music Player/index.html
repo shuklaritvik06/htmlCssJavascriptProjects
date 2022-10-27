@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Music Player" />
+    <meta name="author" content="Ritvik Shukla" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+        <div>
+          <a href=""><button id="btn">Check Projects</button></a>
+        </div>
+      </nav>
+    </header>
+    <div class="songs">
+      <div class="song">
+        <img src="" alt="" id="0"/>
+        <div class="song-info"></div>
+      </div>
+      <div class="song">
+        <img src="" alt="" id="1"/>
+        <div class="song-info"></div>
+      </div>
+      <div class="song">
+        <img src="" alt="" id="2"/>
+        <div class="song-info"></div>
+      </div>
+      <div class="song">
+        <img src="" alt="" id="3"/>
+        <div class="song-info"></div>
+      </div>
+    </div>
+    <div id="control">
+      <h1>Click on the Songs to Play</h1>
+    </div>
+    <div id="bottom">
+      <input type="range" name="progressBar" id="progressBar" value="0" />
+      <div id="time">
+        <span id="currentTime">0:00</span>
+        <div id="icons">
+          <i class="bi bi-skip-backward" id="back"></i>
+          <i class="bi bi-play-circle" id="play"></i>
+          <i class="bi bi-skip-forward" id="forward"></i>
+        </div>
+        <input
+          type="range"
+          name="volume"
+          id="volumeBar"
+          min="0"
+          max="100"
+          step="1"
+        />
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
