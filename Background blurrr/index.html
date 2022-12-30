@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              blurrr: "blurrr 8s infinite"
+            },
+            keyframes: {
+              blurrr: {
+                "0%": {
+                  transform: "translate(0px, 0px) scale(1)"
+                },
+                "33%": {
+                  transform: "translate(30px, -50px) scale(1.1)"
+                },
+                "66%": {
+                  transform: "translate(-20px, 20px) scale(0.9)"
+                },
+                "100%": {
+                  transform: "tranlate(0px, 0px) scale(1)"
+                }
+              }
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Blur Bg</title>
+  </head>
+  <body>
+    <div class="flex h-screen flex-1 justify-center items-center">
+      <div class="relative">
+        <div
+          class="rounded-full absolute h-72 w-72 bg-pink-400 top-10 left-20 filter blur-xl opacity-70 mix-blend-multiply animate-blurrr"
+        ></div>
+        <div
+          class="rounded-full absolute h-72 w-72 bg-blue-400 top-10 right-10 filter blur-xl opacity-70 mix-blend-multiply animate-blurrr animate-delay-2000"
+        ></div>
+        <div
+          class="rounded-full absolute h-72 w-72 bg-yellow-400 bottom-10 filter blur-xl opacity-70 mix-blend-multiply animate-blurrr animate-delay-4000"
+        ></div>
+        <div>
+          <img
+            src="https://via.placeholder.com/300"
+            class="rounded-full relative"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
