@@ -48,9 +48,9 @@ function infixToPostfix(expression) {
   }
   while (myStack.length > 0) {
     temp.push(myStack.pop());
-}
-    console.log(result);
-  return result;
+  }
+
+  return temp;
 }
 
 function postfixEvaluation(postfix) {
@@ -79,5 +79,6 @@ equalBtn.addEventListener("click", function () {
   const inputExpression = inputArea.value;
   const postFix = infixToPostfix(inputExpression);
   const answer = postfixEvaluation(postFix);
+  console.log(answer)
   outputArea.innerHTML = answer;
 });
